@@ -1,0 +1,102 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(multimedia/fotos/fondo.jpg);
+}
+
+header {
+    width: 100%;
+    padding: 5px 20px;
+    margin: 0 0 20px 0;
+    font-size: 15px;
+}
+
+.barra-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.menu-container,
+.menus {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    margin-left: 2rem;
+    list-style-type: none;
+}
+
+.titulo {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.icono-lagashbeer {
+    width: 110px;
+}
+
+.photo-conteiner {
+    display: flex;
+    justify-content: space-around;
+}
+
+.photos {
+    margin: 2.5% 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.photo-item,
+.grid-item {
+    width: 300px;
+}
+
+footer {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 20px 0 0 0;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.icono-items {
+    width: 30px;
+    height: 30px;
+}
+
+.text-cervezas {
+    text-align: center;
+    font-size: 20px;
+}
+
+.grid-conteiner {
+    margin: 5% 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.grid-conteiner>div:hover {
+    border: 1px solid aqua;
+}
