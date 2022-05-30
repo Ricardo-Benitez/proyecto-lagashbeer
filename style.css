@@ -39,7 +39,7 @@ header {
     list-style-type: none;
 }
 
-.titulo {
+.text-conteiner {
     width: 100%;
     font-size: 20px;
     text-align: center;
@@ -92,13 +92,15 @@ footer {
 }
 
 .grid-conteiner {
-    margin: 5% 0;
+    margin: 5% 5.5%;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
+    gap: 1.5em;  
 }
-
-.grid-conteiner>div:hover {
-    border: 1px solid aqua;
+.grid-item{
+   transition: all 2s; 
+}
+.grid-item:hover {
+    transform: scale(1.6);
 }
