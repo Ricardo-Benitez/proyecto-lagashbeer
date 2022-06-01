@@ -11,15 +11,17 @@
 body {
     background-image: url(multimedia/fotos/fondo.jpg);
 }
-
-header {
+.text-conteiner {
     width: 100%;
-    padding: 5px 20px;
-    margin: 0 0 20px 0;
-    font-size: 15px;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
 }
-
+.icono-lagashbeer {
+    width: 110px;
+}
 .barra-nav {
+    padding: 20px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -27,31 +29,13 @@ header {
     align-items: center;
     font-size: 30px;
 }
-
-.menu-container,
-.menus {
-    display: flex;
+.nav{
+    --bs-nav-link-color: #fff;
 }
-
-.menu {
-    display: flex;
-    margin-left: 2rem;
-    list-style-type: none;
-}
-
-.text-conteiner {
-    width: 100%;
-    font-size: 20px;
-    text-align: center;
-}
-
-.icono-lagashbeer {
-    width: 110px;
-}
-
 .photo-conteiner {
     display: flex;
     justify-content: space-around;
+    margin: 10px;
 }
 
 .photos {
@@ -64,10 +48,6 @@ header {
 
 .photo-item{
     width: 300px; }
-
-.grid-item {
-    width: 200px;
-}
 
 footer {
     width: 100%;
@@ -90,19 +70,14 @@ footer {
     text-align: center;
     font-size: 20px;
 }
-
-.grid-conteiner {
-    margin: 5% 5.5%;
-    width: 100%;
+.conteiner {
+    margin: 5%;
+}
+.row{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5em;  
-}
-.grid-item{
-   transition: all 2s; 
-}
-.grid-item:hover {
-    transform: scale(1.6);
+
 }
 .text-contact{
     text-align: center;
@@ -114,7 +89,7 @@ footer {
    flex-wrap: wrap;
    justify-content: center;
    background:#222;
-   margin: 100px 100px;
+   margin: 50px 100px;
    padding: 20px;
    border: 15px solid #000;
    outline: 3px solid teal;
