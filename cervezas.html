@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Cervezas</title>
 </head>
@@ -17,34 +18,131 @@
         <a class="logo" href="index.html">
           <img class="icono-lagashbeer" src="multimedia/fotos/275639197_284320687151432_3979158407974973834_n.jpg">
       </div>
-
-      <div class="menu-conteiner">
-        <ul class="menus">
-          <li class="menu"><a href="index.html">Inicio</a></li>
-          <li class="menu"><a href="nosotros.html">Nosotros</a></li>
-          <li class="menu"><a href="historia.html">Historia</a></li>
-          <li class="menu"><a href="cervezas.html">Cervezas</a></li>
-          <li class="menu"><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </div>
-    </nav>
+    <ul class="nav ">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="nosotros.html">Nosotros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="historia.html">Historia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cervezas.html">Cervezas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contacto.html">Contacto</a>
+      </li>
+    </ul>
+  </nav>
   </header>
 
-  <section>
+  <section class="conteiner">
     <div class="text-cervezas">
       <h3>Cervezas</h3>
       <p>Aca le compartimos algunas de las variedades de birra que tenemos para ofrecerte.</p>
     </div>
-    <div class="grid-conteiner">
-      <div><img class="grid-item" src="multimedia/fotos/87677709_122067462715432_3650231625039421631_n.jpg"></div>
-      <div><img class="grid-item" src="multimedia/fotos/71176281_2472836632792579_3167805740807787969_n.jpg"></div>
-      <div><img class="grid-item" src="multimedia/fotos/67746772_762402507549373_954492056708376867_n.jpg"></div>
-      <div><img class="grid-item" src="multimedia/fotos/67301720_498862857592199_5029341080471237490_n.jpg"></div>
-      <div><img class="grid-item" src="multimedia/fotos/66620429_150678209372993_891105434297013770_n.jpg"></div>
-      <div><img class="grid-item" src="multimedia/fotos/66658560_2342713689309207_7944931463664968812_n.jpg"></div>
-      <div><img class="grid-item" src="multimedia/fotos/275543085_306997921343691_2764268621494799959_n.jpg"></div>
-
+<div class="row">
+  <div class="col-2">
+    <div class="card text-bg-dark mb-3" style="width: 18rem;">
+      <img src="multimedia/fotos/87677709_122067462715432_3650231625039421631_n.jpg" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">IPA</h5>
+        <p class="card-text ">descripcion de IPA</p>
+        <a href="#" class="btn btn-primary">añadir al carro</a>
+       </div> 
+      </div>
     </div>
+
+      <div class="col-2">
+      <div class="card text-bg-dark mb-3" style="width: 18rem;">
+        <img src="multimedia/fotos/71176281_2472836632792579_3167805740807787969_n.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">IPA</h5>
+          <p class="card-text ">descripcion de IPA</p>
+          <a href="#" class="btn btn-primary">añadir al carro</a>
+        </div>
+       </div>
+      </div>
+
+       <div class="col-2">
+        <div class="card text-bg-dark mb-3" style="width: 18rem;">
+          <img src="multimedia/fotos/67746772_762402507549373_954492056708376867_n.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">IPA</h5>
+            <p class="card-text ">descripcion de IPA</p>
+            <a href="#" class="btn btn-primary">añadir al carro</a>
+          </div> 
+        </div>
+      </div>
+
+        <div class="col-2">
+          <div class="card text-bg-dark mb-3" style="width: 18rem;">
+            <img src="multimedia/fotos/67301720_498862857592199_5029341080471237490_n.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">IPA</h5>
+              <p class="card-text ">descripcion de IPA</p>
+              <a href="#" class="btn btn-primary">añadir al carro</a>
+            </div>
+          </div>
+        </div>
+
+            <div class="col-2">
+            <div class="card text-bg-dark mb-3" style="width: 18rem;">
+              <img src="multimedia/fotos/66620429_150678209372993_891105434297013770_n.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">IPA</h5>
+                <p class="card-text ">descripcion de IPA</p>
+                <a href="#" class="btn btn-primary">añadir al carro</a>
+              </div>
+            </div>
+          </div>
+
+            <div class="col-2">
+              <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                <img src="multimedia/fotos/66658560_2342713689309207_7944931463664968812_n.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">IPA</h5>
+                  <p class="card-text ">descripcion de IPA</p>
+                  <a href="#" class="btn btn-primary">añadir al carro</a>
+                </div>
+                </div> 
+              </div> 
+
+              <div class="col-2">
+                <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                  <img src="multimedia/fotos/275543085_306997921343691_2764268621494799959_n.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">IPA</h5>
+                    <p class="card-text ">descripcion de IPA</p>
+                    <a href="#" class="btn btn-primary">añadir al carro</a>
+                  </div>
+                  </div> 
+                </div>  
+
+                <div class="col-2">
+                  <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                    <img src="multimedia/fotos/66459948_636642236830206_1422099433265779708_n.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">IPA</h5>
+                      <p class="card-text ">descripcion de IPA</p>
+                      <a href="#" class="btn btn-primary">añadir al carro</a>
+                    </div>
+                    </div> 
+                  </div> 
+
+                  <div class="col-2">
+                    <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                      <img src="multimedia/fotos/122192086_268119101218088_4689168102330596433_n.jpg" class="card-img-top">
+                      <div class="card-body">
+                        <h5 class="card-title">IPA</h5>
+                        <p class="card-text ">descripcion de IPA</p>
+                        <a href="#" class="btn btn-primary">añadir al carro</a>
+                      </div>
+                      </div> 
+                    </div>    
+</div>
   </section>
 
   <footer>
@@ -60,6 +158,7 @@
       </li>
     </ul>
   </footer>
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
