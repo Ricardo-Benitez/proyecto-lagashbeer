@@ -141,7 +141,8 @@ footer {
 
 .row {
     justify-content: space-between;
-    padding: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 .text-contact {
