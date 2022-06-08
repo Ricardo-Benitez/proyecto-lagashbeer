@@ -25,7 +25,7 @@ body {
     display: inline;
     font-style: italic;
     font-size: 25px;
-    color: white;
+    color: lightyellow;
     padding: 1%;
     transition: color 1s;
 }
@@ -36,22 +36,20 @@ body {
 
 
 .icono-lagashbeer {
-    width: 110px;
+    width: 100px;
 }
 
 .navbar {
     font-style: italic;
     --bs-navbar-hover-color: lightseagreen;
-    --bs-navbar-active-color: cadetblue;
     --bs-navbar-toggler-border-color: white;
 }
 
 .navbar-nav {
-    --bs-nav-link-color: #fff;
+    --bs-nav-link-color: lightyellow;
     overflow: hidden;
     font-size: 30px;
 }
-
 .gallery-conteiner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -103,12 +101,6 @@ footer {
     height: 30px;
     transition: all 2s;
 }
-
-.text-cervezas {
-    text-align: center;
-    font-size: 20px;
-}
-
 .row {
     justify-content: space-between;
     padding-left: 4%;
@@ -119,10 +111,29 @@ footer {
     text-align: center;
     font-size: 25px;
 }
-
-.section-historia {
-    padding: 5%;
+.barriles{
+    display: flex;
+    justify-content: space-around;
+    padding: 2%
 }
+.barril-img1, .barril-img2{
+    width: 350px;
+    transition: all 1.5s;
+}
+.barril-img1:hover{
+    transform: translate(10px,15px);
+}
+.barril-img2:hover{
+    transform: translate(10px,15px);
+}
+.text-ventas{
+    text-align: center;
+    font-size: 22px;
+    font-style:oblique;
+    color:lightyellow;
+    padding: 2%;
+}
+
 
 .section-nosotros {
     padding: 5%;
@@ -134,7 +145,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     background: #222;
-    margin: 50px 100px;
+    margin: 40px 200px;
     padding: 20px;
     border: 15px solid #000;
     outline: 3px solid teal;
@@ -229,6 +240,19 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         margin: auto;
         justify-content: center;
+    }
+    .gallery-conteiner{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding:25%;
+ 
+    }
+    .barriles{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        gap: 1rem;
     }
 }
 
