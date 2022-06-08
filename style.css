@@ -16,7 +16,7 @@ body {
 .text-conteiner {
     font-style: italic;
     font-size: 30px;
-    color: cadetblue;
+    color:firebrick;
     text-align: center;
     padding: 2%;
 }
@@ -31,18 +31,23 @@ body {
 }
 
 .text:hover {
-    color: lightseagreen;
+    color:firebrick;
 }
 
 
 .icono-lagashbeer {
-    width: 100px;
+    width: 200px;
+    transition: all 1.5s;
+}
+.icono-lagashbeer:hover{
+    transform: scale(1.2);
 }
 
 .navbar {
     font-style: italic;
-    --bs-navbar-hover-color: lightseagreen;
+    --bs-navbar-hover-color: firebrick;
     --bs-navbar-toggler-border-color: white;
+    padding: 1rem;
 }
 
 .navbar-nav {
