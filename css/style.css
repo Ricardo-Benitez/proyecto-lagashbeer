@@ -1,0 +1,196 @@
+header .navbar {
+  font-style: italic;
+  --bs-navbar-hover-color:firebrick ;
+  --bs-navbar-toggler-border-color: white;
+  padding: 1rem;
+}
+header .navbar-nav {
+  --bs-nav-link-color: lightyellow;
+  overflow: hidden;
+  font-size: 30px;
+}
+header .icono-lagashbeer {
+  width: 200px;
+  transition: all 1.5s;
+}
+header .icono-lagashbeer:hover {
+  transform: scale(1.2);
+}
+
+main .text-conteiner {
+  font-style: italic;
+  font-size: 30px;
+  color: firebrick;
+  text-align: center;
+  padding: 1rem;
+}
+main .text {
+  display: inline;
+  font-style: italic;
+  font-size: 25px;
+  color: lightyellow;
+  padding: 1rem;
+  transition: color 1s;
+}
+main .text:hover {
+  color: firebrick;
+}
+main .gallery-conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+}
+main .gallery-item {
+  transition: all 1.2s;
+}
+main .gallery-item:hover {
+  transform: translate(15px, 25px);
+}
+main .gallery-img {
+  width: 90%;
+  height: 90%;
+}
+main .card {
+  transition: all 1.5s;
+}
+main .card:hover {
+  transform: scale(1.1);
+}
+main hr {
+  margin: 1rem;
+  color: black;
+  border: black;
+  border-top: 5px solid;
+}
+main .row {
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+main .barriles {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+main .barril-img1, main .barril-img2 {
+  width: 350px;
+  transition: all 1.5s;
+}
+main .barril-img1:hover, main .barril-img2:hover {
+  transform: translate(10px, 15px);
+}
+main .text-ventas {
+  text-align: center;
+  font-size: 22px;
+  font-style: oblique;
+  color: 40px;
+  padding: 1rem;
+}
+main .section-nosotros {
+  padding: 2rem;
+}
+main .form-conteiner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #222;
+  margin: 40px 200px;
+  padding: 1rem;
+  border: 15px solid #000;
+  outline: 3px solid firebrick;
+}
+main .form {
+  min-width: 300px;
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  order: 5;
+}
+main .form-input:focus {
+  background: linear-gradient(to bottom, transparent, #111);
+  outline: none;
+  border-bottom: 3px solid rgb(116, 13, 16);
+}
+main .form-input {
+  width: 100%;
+  padding: 7px;
+  margin: 6px 0;
+  border: none;
+  border-bottom: 3px solid rgb(170, 17, 27);
+  background: transparent;
+  color: 2rem;
+}
+main .form textarea {
+  min-height: 140px;
+  resize: none;
+}
+main .form-img {
+  flex: 1;
+  display: flex;
+  padding: 10px;
+  min-width: 300px;
+  max-width: 400px;
+  order: 2;
+}
+main .form-img div {
+  padding: 10px;
+}
+main .img-conteiner {
+  margin: auto;
+}
+main .img-conteiner div {
+  border-radius: 50%;
+  background-color: firebrick;
+  text-align: center;
+  padding: 40px;
+}
+main .form-img img {
+  width: 90%;
+  margin: auto;
+}
+main .form input[type=submit] {
+  background-color: firebrick;
+  border-bottom: none;
+  padding: 12px;
+}
+main .form input[type=submit]:hover {
+  background-color: red;
+  border-bottom: none;
+  padding: 12px;
+}
+main .form input[type=submit]:focus {
+  background: rgb(170, 17, 22);
+}
+
+footer .iconos {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-right: 2rem;
+}
+footer .icono-items {
+  width: 30px;
+  height: 30px;
+  transition: all 2s;
+}
+footer .icono-items:hover {
+  transform: scale(2);
+}
+
+* {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background-image: url(/multimedia/fotos/fondo.jpg);
+  background-size: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

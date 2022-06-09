@@ -58,7 +58,7 @@ body {
 .gallery-conteiner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 7%;
+    padding: 1rem;
  
 }
 .gallery-item{
@@ -112,10 +112,6 @@ footer {
     padding-right: 2rem;
 }
 
-.text-contact {
-    text-align: center;
-    font-size: 25px;
-}
 .barriles{
     display: flex;
     justify-content: space-around;
@@ -153,7 +149,7 @@ footer {
     margin: 40px 200px;
     padding: 1rem;
     border: 15px solid #000;
-    outline: 3px solid teal;
+    outline: 3px solid firebrick;
 }
 
 .form {
@@ -167,7 +163,7 @@ footer {
 .form-input:focus {
     background: linear-gradient(to bottom, transparent, #111);
     outline: none;
-    border-bottom: 3px solid rgb(13, 99, 116);
+    border-bottom: 3px solid rgb(116, 13, 16);
 }
 
 .form-input {
@@ -175,7 +171,7 @@ footer {
     padding: 7px;
     margin: 6px 0;
     border: none;
-    border-bottom: 3px solid rgb(17, 145, 170);
+    border-bottom: 3px solid rgb(170, 17, 27);
     background: transparent;
     color: white;
 }
@@ -206,7 +202,7 @@ footer {
 
 .img-conteiner div {
     border-radius: 50%;
-    background-color: teal;
+    background-color: firebrick;
     text-align: center;
     padding: 40px;
 }
@@ -218,19 +214,19 @@ footer {
 }
 
 .form input[type="submit"] {
-    background-color: teal;
+    background-color: firebrick;
     border-bottom: none;
     padding: 12px;
 }
 
 .form input[type="submit"]:hover {
-    background-color: lightseagreen;
+    background-color: red;
     border-bottom: none;
     padding: 12px;
 }
 
 .form input[type="submit"]:focus {
-    background: rgb(17, 152, 170);
+    background: rgb(170, 17, 22);
 }
 
 @media screen and (max-width: 700px) {
@@ -247,10 +243,7 @@ footer {
         justify-content: center;
     }
     .gallery-conteiner{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        padding:25%;
- 
+        display: none;
     }
     .barriles{
         width: 100%;
