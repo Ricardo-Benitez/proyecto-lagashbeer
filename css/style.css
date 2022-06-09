@@ -42,6 +42,8 @@ main .gallery-conteiner {
 }
 main .gallery-item {
   transition: all 1.2s;
+  display: flex;
+  justify-content: center;
 }
 main .gallery-item:hover {
   transform: translate(15px, 25px);
