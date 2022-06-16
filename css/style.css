@@ -22,6 +22,9 @@ main .text-conteiner {
   color: firebrick;
   text-align: center;
 }
+main h1 {
+  font-size: 2.2rem;
+}
 main .text {
   display: inline;
   font-size: 25px;
