@@ -3,9 +3,8 @@
 @import 'components/footer';
 @import 'base/colors';
 @import 'base/listas';
-
-
-
+@import 'base/extends';
+@import 'base/mixins';
 
 
 * {
@@ -22,3 +21,8 @@ body {
     background-image: url(/multimedia/fotos/fondo.jpg);
     background-size: 100%;
 }
+
+.disclaimer{
+    display: none;
+}
+

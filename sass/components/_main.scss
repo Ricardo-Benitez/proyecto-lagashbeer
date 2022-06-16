@@ -1,44 +1,38 @@
 @import '../base/listas';
 
 
+
 main{
     .text-conteiner {
-        font-style: italic;
         font-size: nth($encabezados, 4 );
         color:nth($colores , 2 );
-        text-align: center;
-        padding: nth($encabezados, 2 );
+        text-align: center;  
     }
     
     .text {
         display: inline;
-        font-style: italic;
         font-size: nth($encabezados, 5 );
         color: nth($colores , 3 );
-        padding: nth($encabezados, 2 );
-        transition: color 1s;
-        &:hover {
-            color:nth($colores , 2 );
-        }
     }
     .gallery-conteiner {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: nth($encabezados, 2 );
+        gap: 2rem;
      
     }
     .gallery-item{
-        transition: all 1.2s;
+        display: flex;
+        justify-content: center;
+        transition: all 1.6s;
         &:hover{
             transform: translate(15px, 25px);
         }
+
     }
     
-    .gallery-img {
-        width: 90%;
-        height: 90%;
-    }
     .card{
+        width: 18rem;
         transition: all 1.5s;
         &:hover{
             transform: scale(1.1);
@@ -54,11 +48,13 @@ main{
         justify-content: space-between;
         padding-left:nth($encabezados, 1 );
         padding-right:nth($encabezados, 1 );
+        gap: 1rem;
     }
     
     .barriles{
         display: flex;
         justify-content: space-around;
+        align-items: center;
         padding:nth($encabezados, 2 ) ;
     }
     .barril-img1, .barril-img2{
@@ -147,12 +143,6 @@ main{
         padding: nth($encabezados, 3 );
     }
     
-    .form-img img {
-        width: 90%;
-        margin: auto;
-    
-    }
-    
     .form input[type="submit"] {
         background-color: firebrick;
         border-bottom: none;
@@ -170,12 +160,10 @@ main{
     }
 
     @media screen and (max-width: 700px) {
-
-        .form-conteiner {
+        .form-conteiner{
             width: 100%;
             margin: auto;
         }
-    
         .row {
             width: 100%;
             grid-template-columns: repeat(1, 1fr);
@@ -192,6 +180,7 @@ main{
             margin:auto;
             gap: 1rem;
         }
+
     }
     
 }

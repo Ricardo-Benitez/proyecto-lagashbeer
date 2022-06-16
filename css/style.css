@@ -10,7 +10,7 @@ header .navbar-nav {
   font-size: 30px;
 }
 header .icono-lagashbeer {
-  width: 200px;
+  width: 170px;
   transition: all 1.5s;
 }
 header .icono-lagashbeer:hover {
@@ -18,41 +18,31 @@ header .icono-lagashbeer:hover {
 }
 
 main .text-conteiner {
-  font-style: italic;
   font-size: 30px;
   color: firebrick;
   text-align: center;
-  padding: 1rem;
 }
 main .text {
   display: inline;
-  font-style: italic;
   font-size: 25px;
   color: lightyellow;
-  padding: 1rem;
-  transition: color 1s;
-}
-main .text:hover {
-  color: firebrick;
 }
 main .gallery-conteiner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
+  gap: 2rem;
 }
 main .gallery-item {
-  transition: all 1.2s;
   display: flex;
   justify-content: center;
+  transition: all 1.6s;
 }
 main .gallery-item:hover {
   transform: translate(15px, 25px);
 }
-main .gallery-img {
-  width: 90%;
-  height: 90%;
-}
 main .card {
+  width: 18rem;
   transition: all 1.5s;
 }
 main .card:hover {
@@ -68,10 +58,12 @@ main .row {
   justify-content: space-between;
   padding-left: 2rem;
   padding-right: 2rem;
+  gap: 1rem;
 }
 main .barriles {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 1rem;
 }
 main .barril-img1, main .barril-img2 {
@@ -147,10 +139,6 @@ main .img-conteiner div {
   text-align: center;
   padding: 40px;
 }
-main .form-img img {
-  width: 90%;
-  margin: auto;
-}
 main .form input[type=submit] {
   background-color: firebrick;
   border-bottom: none;
@@ -202,6 +190,21 @@ footer .icono-items:hover {
   transform: scale(2);
 }
 
+.text, .text-conteiner {
+  font-style: italic;
+  padding: 1rem;
+}
+
+.form-img img {
+  width: 90%;
+  margin: auto;
+}
+
+.gallery-img {
+  width: 24rem;
+  margin: auto;
+}
+
 * {
   font-family: "Times New Roman", Times, serif;
   font-weight: 100;
@@ -215,6 +218,10 @@ footer .icono-items:hover {
 body {
   background-image: url(/multimedia/fotos/fondo.jpg);
   background-size: 100%;
+}
+
+.disclaimer {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
