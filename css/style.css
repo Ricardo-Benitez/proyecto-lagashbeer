@@ -219,7 +219,7 @@ footer .icono-items:hover {
 }
 
 body {
-  background-image: url(/multimedia/fotos/fondo.jpg);
+  background-image: url(../multimedia/fotos/fondo.jpg);
   background-size: 100%;
 }
 
