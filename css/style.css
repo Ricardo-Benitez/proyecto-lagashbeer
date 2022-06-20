@@ -177,6 +177,17 @@ main .form input[type=submit]:focus {
     gap: 1rem;
   }
 }
+main .conteiner-nosotros {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .img-nosotros {
+  width: 24rem;
+}
+main .parrafo-nosotros {
+  width: 80%;
+}
 
 footer .iconos {
   display: flex;
