@@ -83,9 +83,6 @@ main .text-ventas {
   color: 40px;
   padding: 1rem;
 }
-main .section-nosotros {
-  padding: 2rem;
-}
 main .form-conteiner {
   display: flex;
   align-items: center;
@@ -155,7 +152,7 @@ main .form input[type=submit]:hover {
 main .form input[type=submit]:focus {
   background: rgb(170, 17, 22);
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   main .form-conteiner {
     width: 100%;
     margin: auto;
