@@ -152,7 +152,7 @@ main .form input[type=submit]:hover {
 main .form input[type=submit]:focus {
   background: rgb(170, 17, 22);
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   main .form-conteiner {
     width: 100%;
     margin: auto;
@@ -181,6 +181,7 @@ main .conteiner-nosotros {
 }
 main .img-nosotros {
   width: 24rem;
+  padding: 1rem;
 }
 main .parrafo-nosotros {
   width: 80%;
