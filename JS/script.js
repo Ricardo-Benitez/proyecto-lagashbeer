@@ -3,9 +3,6 @@ function producto(nombre, precio, stock){
   this.nombre = nombre
   this.precio = precio
   this.stock = stock
-  this.sumarIva = function (){
-    this.precio = this.precio * 1.21
-}
 }
 
 const producto1 = new producto("cerveza ipa", 400, 20)
@@ -62,21 +59,17 @@ for(let i = 0; i < cantidadCompras; i++){
 }
 
 switch(true){
-    case precioTotal < 2000 || precioTotal > 1000:
+    case precioTotal < 3000 && precioTotal > 1000:
         precioTotal = precioTotal * 0.95
         alert("Recibiste un descuento del 5% por tu compra")
         break;
-    case precioTotal < 5000:
+    case precioTotal >= 3000 && precioTotal <6000:
         precioTotal = precioTotal * 0.90
         alert("Recibiste un descuento del 10% por tu compra")
         break;
-    case precioTotal < 10000:
-        precioTotal = precioTotal * 0.80
-        alert("Recibiste un descuento del 20% por tu compra")
-        break;
-    case precioTotal > 10000:
-        alert("Recibiste un descuento del 40% por tu compra")
-        precioTotal = precioTotal * 0.60
+    case precioTotal >= 6000:
+        alert("Recibiste un descuento del 30% por tu compra")
+        precioTotal = precioTotal * 0.70
         break;
     default:
         console.log(precioTotal)
@@ -84,6 +77,4 @@ switch(true){
         break;
 }
 
-let precioToTalConImpuestos = sumaIva(precioTotal)
-
-alert("Este es el precio total final con impuestos de tu compra: $" + precioToTalConImpuestos)
+alert("Este es el precio total final de tu compra es: $" + precioTotal)
