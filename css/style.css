@@ -236,4 +236,14 @@ body {
   display: none;
 }
 
+form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+input{
+  color:#000;
+}
+
 /*# sourceMappingURL=style.css.map */
