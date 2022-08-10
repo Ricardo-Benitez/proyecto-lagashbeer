@@ -44,24 +44,30 @@ main .gallery-item {
 main .gallery-item:hover {
   transform: translate(15px, 25px);
 }
-main .card {
-  width: 18rem;
-  transition: all 1.5s;
-}
-main .card:hover {
-  transform: scale(1.1);
-}
+
 main hr {
   margin: 1rem;
   color: black;
   border: black;
   border-top: 5px solid;
 }
-main .row {
-  justify-content: space-between;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  gap: 1rem;
+main .ofertas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+main .cervezas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+main .card-body{
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: italic;
 }
 main .barriles {
   display: flex;
@@ -84,12 +90,6 @@ main .text-ventas {
   padding: 1rem;
 }
 @media screen and (max-width: 800px) {
-  main .row {
-    width: 100%;
-    grid-template-columns: repeat(1, 1fr);
-    margin: auto;
-    justify-content: center;
-  }
   main .gallery-conteiner {
     display: none;
   }
@@ -160,4 +160,35 @@ input{
   color:#000;
 }
 
+.row{
+gap: 1.4rem;
+justify-content: center;
+}
+.card{
+  background-color: transparent;
+  align-items: center;
+  width: 16rem;
+  border: none;
+}
+.card-title{
+color: firebrick;
+font-size: 2rem;
+}
+.card-text{
+  color: white;
+}
+.imagen{
+  width: 16rem;
+  transition: all 1.5s;
+}
+.imagen:hover{
+  transform: scale(1.1);
+}
+.btn{
+  background-color: firebrick;
+  border: firebrick;
+}
+.btn-primary:hover{
+  --bs-btn-hover-bg:#dc3545;
+}
 /*# sourceMappingURL=style.css.map */

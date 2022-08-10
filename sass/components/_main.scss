@@ -48,7 +48,6 @@ main{
         border-top: 5px solid;
     }
     .row {
-        justify-content: space-between;
         padding-left:nth($encabezados, 1 );
         padding-right:nth($encabezados, 1 );
         gap: 1rem;
