@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Precio
             const miNodoPrecio = document.createElement('p');
             miNodoPrecio.classList.add('card-text');
-            miNodoPrecio.innerText = `${info.precio}`;
+            miNodoPrecio.innerText = `$${info.precio}`;
             //Stock
             // const miNodoStock = document.createElement('p');
             // miNodoStock.classList.add('card-text');

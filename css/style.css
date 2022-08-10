@@ -187,8 +187,15 @@ font-size: 2rem;
 .btn{
   background-color: firebrick;
   border: firebrick;
+  border-radius:var(--bs-btn-border-radius);
 }
-.btn-primary:hover{
+.btn-primary{
   --bs-btn-hover-bg:#dc3545;
+  --bs-btn-border-color:#dc3545;
+  --bs-btn-hover-border-color:#dc3545;
+  --bs-btn-active-bg:#dc3545;
+  --bs-btn-active-border-color:#dc3545;
+  --bs-btn-disabled-bg:#dc3545;
+  --bs-btn-disabled-border-color:#dc3545;
 }
 /*# sourceMappingURL=style.css.map */
