@@ -193,7 +193,7 @@ DOMbotonComprar.addEventListener('click', vaciarCarrito);
 
     DOMbotonComprar.addEventListener('click', ()=>
     Swal.fire({
-        title:"Muchas Gracias",
+        title:"Estimado cliente",
         text:"¿Desea finalizar su compra?",
         showCancelButton: true,
         confirmButtonText: "Si",
@@ -209,4 +209,15 @@ DOMbotonComprar.addEventListener('click', vaciarCarrito);
         } 
     })
     );
+    const miNodoBoton =document.getElementsByClassName("btn-primary")
+    for (const elemento of miNodoBoton) {
+        elemento.addEventListener('click', ()=>
+        Toastify({
+            text:"Agregaste una cerveza al carrito",
+            duration:2000,
+            gravity:"top",
+            position:"right",
+        }).showToast(),
+        );
+    }
 });
