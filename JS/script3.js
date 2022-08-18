@@ -5,116 +5,84 @@ document.addEventListener('DOMContentLoaded', () => {
     const DOMcarrito = document.querySelector('#carrito');
     const DOMtotal = document.querySelector('#total');
     const DOMbotonVaciar = document.querySelector('#boton-vaciar');
+    const DOMbotonComprar = document.querySelector('#boton-comprar');
 
     const listaDeProductos = [
         {
             id: 1,
             nombre: "cerveza ",
             precio: 350,
-            // stock: 20,
             img:'multimedia/fotos/foto1.jpg'
         },
         {
             id: 2,
             nombre: "cerveza ",
             precio: 400,
-            // stock: 20,
             img:'multimedia/fotos/foto2.jpg'
         },
         {
             id: 3,
             nombre: "cerveza ",
             precio: 400,
-            // stock: 20,
             img:'multimedia/fotos/foto3.jpg'
         },
         {
             id: 4,
             nombre: "cerveza ",
             precio: 400,
-            // stock: 20,
             img:'multimedia/fotos/foto4.jpg'
         },
         {
             id: 5,
             nombre: "cerveza ",
             precio: 350,
-            // stock: 20,
             img:'multimedia/fotos/foto5.jpg'
         },
         {
             id: 6,
             nombre: "cerveza ",
             precio: 450,
-            // stock: 20,
             img:'multimedia/fotos/foto6.jpg'
         },
         {
             id: 7,
             nombre: "cerveza ",
             precio: 450,
-            // stock: 20,
             img:'multimedia/fotos/foto7.jpg'
         },
         {
             id: 8,
             nombre: "cerveza ",
             precio: 400,
-            // stock: 20,
             img:'multimedia/fotos/foto8.jpg'
         },
         {
             id: 9,
             nombre: "cerveza ",
             precio: 450,
-            // stock: 20,
             img:'multimedia/fotos/foto1.jpg'
         },
         {
             id: 10,
             nombre: "cerveza ",
             precio: 350,
-            // stock: 20,
             img:'multimedia/fotos/foto2.jpg'
         },
         {
             id: 11,
             nombre: "cerveza ",
             precio: 450,
-            // stock: 20,
             img:'multimedia/fotos/foto3.jpg'
         },
         {
             id: 12,
             nombre: "cerveza ",
             precio: 450,
-            // stock: 20,
             img:'multimedia/fotos/foto4.jpg'
         }
 
     ]
 
-    // Funciones
-
-    /* const URLGET = "./producto.json"
-    //Agregamos un botón con jQuery
-    $("body").prepend('<button id="btn1">GET</button>');
-    //Escuchamos el evento click del botón agregado
-    $("#btn1").click(() => { 
-    $.get(URLGET, function (response, status) {
-        if(status === "success"){
-        baseDeDatos = response;
-        renderizarProductos()
-        }
-        else{
-            console.log('No encontramos el archivo de datos')
-        }
-    });
-    }) */
-
-    /**
-    * Dibuja todos los productos a partir de la base de datos. No confundir con el carrito
-    */
     function renderizarProductos() {
         listaDeProductos.forEach((info) => {
             // Estructura
@@ -135,10 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const miNodoPrecio = document.createElement('p');
             miNodoPrecio.classList.add('card-text');
             miNodoPrecio.innerText = `$${info.precio}`;
-            //Stock
-            // const miNodoStock = document.createElement('p');
-            // miNodoStock.classList.add('card-text');
-            // miNodoStock.innerText = `Stock: ${info.stock}`;
             // Boton 
             const miNodoBoton = document.createElement('button');
             miNodoBoton.classList.add('btn', 'btn-primary');
@@ -149,7 +113,6 @@ document.addEventListener('DOMContentLoaded', () => {
             miNodoCardBody.append(miNodoImagen);
             miNodoCardBody.append(miNodoTitle);
             miNodoCardBody.append(miNodoPrecio);
-            // miNodoCardBody.append(miNodoStock);
             miNodoCardBody.append(miNodoBoton);
             miNodo.append(miNodoCardBody);
             DOMitems.append(miNodo);
@@ -271,4 +234,28 @@ document.addEventListener('DOMContentLoaded', () => {
     cargarCarritoDeLocalStorage();
     renderizarProductos();
     renderizarCarrito();
+
+    DOMbotonComprar.addEventListener('click', vaciarCarrito);
+    cargarCarritoDeLocalStorage();
+    renderizarProductos();
+    renderizarCarrito();
+
+    DOMbotonComprar.addEventListener('click', ()=>
+    Swal.fire({
+        title:"Muchas Gracias",
+        text:"¿Desea finalizar su compra?",
+        showCancelButton: true,
+        confirmButtonText: "Si",
+        cancelButtonText: "No",
+    }).then((resultado)=> {
+        if(resultado.isConfirmed) {
+        Swal.fire({
+            title:"Felicidades",
+            text:"Gracias por su compra estaremos en contacto para el envio",
+            confirmButtontext: "OK",
+            icon:"success",
+        })
+        } 
+    })
+    );
 });
