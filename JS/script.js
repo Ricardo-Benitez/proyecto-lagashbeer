@@ -180,6 +180,7 @@ DOMbotonComprar.addEventListener('click', vaciarCarrito);
     renderizarCarrito();
 
 });
+
 DOMbotonComprar.addEventListener('click', ()=>
 Swal.fire({
     title:"Estimado cliente",

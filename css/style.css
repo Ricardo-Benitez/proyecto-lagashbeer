@@ -197,4 +197,8 @@ font-size: 2rem;
   --bs-btn-disabled-bg:#dc3545;
   --bs-btn-disabled-border-color:#dc3545;
 }
+table thead {
+  background:#302b63;
+  color:white;
+}
 /*# sourceMappingURL=style.css.map */
