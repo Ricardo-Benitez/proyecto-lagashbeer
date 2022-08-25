@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             precio: 300,
             img:'multimedia/fotos/foto2.jpg'
         }
+        
     ]
 function renderizarProductos() {
     listaDeProductos.forEach((info) => {
