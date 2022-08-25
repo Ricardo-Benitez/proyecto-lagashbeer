@@ -13,4 +13,4 @@ console.log(form[0].value)
 console.log(form[1].value)
 
 console.log("Formulario Enviado"); 
-}   
+} 

@@ -20,18 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
             nombre: "cerveza ",
             precio: 300,
             img:'multimedia/fotos/foto2.jpg'
-        },
-        {
-            id: 3,
-            nombre: "cerveza ",
-            precio: 300,
-            img:'multimedia/fotos/foto3.jpg'
-        },
-        {
-            id: 4,
-            nombre: "cerveza ",
-            precio: 300,
-            img:'multimedia/fotos/foto4.jpg'
         }
     ]
 function renderizarProductos() {
@@ -191,33 +179,33 @@ DOMbotonComprar.addEventListener('click', vaciarCarrito);
     renderizarProductos();
     renderizarCarrito();
 
-    DOMbotonComprar.addEventListener('click', ()=>
-    Swal.fire({
-        title:"Estimado cliente",
-        text:"¿Desea finalizar su compra?",
-        showCancelButton: true,
-        confirmButtonText: "Si",
-        cancelButtonText: "No",
-    }).then((resultado)=> {
-        if(resultado.isConfirmed) {
-        Swal.fire({
-            title:"Felicidades",
-            text:"Gracias por su compra estaremos en contacto para el envio",
-            confirmButtontext: "OK",
-            icon:"success",
-        })
-        } 
-    })
-    );
-    const miNodoBoton =document.getElementsByClassName("btn-primary")
-    for (const elemento of miNodoBoton) {
-        elemento.addEventListener('click', ()=>
-        Toastify({
-            text:"Agregaste una cerveza al carrito",
-            duration:2000,
-            gravity:"top",
-            position:"right",
-        }).showToast(),
-        );
-    }
 });
+DOMbotonComprar.addEventListener('click', ()=>
+Swal.fire({
+    title:"Estimado cliente",
+    text:"¿Desea finalizar su compra?",
+    showCancelButton: true,
+    confirmButtonText: "Si",
+    cancelButtonText: "No",
+}).then((resultado)=> {
+    if(resultado.isConfirmed) {
+    Swal.fire({
+        title:"Felicidades",
+        text:"Gracias por su compra estaremos en contacto para el envio",
+        confirmButtontext: "OK",
+        icon:"success",
+    })
+    } 
+})
+);
+const miNodoBoton =document.getElementsByClassName("btn-primary")
+for (const elemento of miNodoBoton) {
+    elemento.addEventListener('click', ()=>
+    Toastify({
+        text:"Agregaste una cerveza al carrito",
+        duration:2000,
+        gravity:"top",
+        position:"right",
+    }).showToast(),
+    );
+}
