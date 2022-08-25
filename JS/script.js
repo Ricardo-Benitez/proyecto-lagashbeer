@@ -179,10 +179,7 @@ DOMbotonComprar.addEventListener('click', vaciarCarrito);
     cargarCarritoDeLocalStorage();
     renderizarProductos();
     renderizarCarrito();
-
-});
-
-DOMbotonComprar.addEventListener('click', ()=>
+    DOMbotonComprar.addEventListener('click', ()=>
 Swal.fire({
     title:"Estimado cliente",
     text:"¿Desea finalizar su compra?",
@@ -211,3 +208,5 @@ for (const elemento of miNodoBoton) {
     }).showToast(),
     );
 }
+
+});
