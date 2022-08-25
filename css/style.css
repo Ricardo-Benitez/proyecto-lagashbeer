@@ -86,7 +86,7 @@ main .text-ventas {
   text-align: center;
   font-size: 22px;
   font-style: oblique;
-  color: 40px;
+  color:white;
   padding: 1rem;
 }
 @media screen and (max-width: 800px) {
@@ -137,7 +137,6 @@ footer .icono-items:hover {
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
-  color: white;
   text-decoration: none;
 }
 
@@ -200,5 +199,16 @@ font-size: 2rem;
 table thead {
   background:#302b63;
   color:white;
+}
+.text-right{
+  color: black;
+}
+.text-right2{
+  color: black;
+  font-size: 30px;
+  font-style: italic;
+}
+.text-carro{
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
