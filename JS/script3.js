@@ -198,10 +198,6 @@ document.addEventListener('DOMContentLoaded', () => {
     renderizarProductos();
     renderizarCarrito();
 
-    DOMbotonComprar.addEventListener('click', vaciarCarrito);
-    cargarCarritoDeLocalStorage();
-    renderizarProductos();
-    renderizarCarrito();
     DOMbotonComprar.addEventListener('click', ()=>
 Swal.fire({
     title:"Estimado cliente",
