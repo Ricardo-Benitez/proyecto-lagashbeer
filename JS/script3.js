@@ -43,7 +43,43 @@ document.addEventListener('DOMContentLoaded', () => {
              nombre: "cerveza ",
              precio: 450,
              img:'multimedia/fotos/foto6.jpg'
-         }
+         },
+         {
+            id: 7,
+            nombre: "cerveza ",
+            precio: 450,
+            img:'multimedia/fotos/foto6.jpg'
+        },
+        {
+            id: 8,
+            nombre: "cerveza ",
+            precio: 450,
+            img:'multimedia/fotos/foto6.jpg'
+        },
+        {
+            id: 9,
+            nombre: "cerveza ",
+            precio: 450,
+            img:'multimedia/fotos/foto6.jpg'
+        },
+        {
+            id: 10,
+            nombre: "cerveza ",
+            precio: 450,
+            img:'multimedia/fotos/foto6.jpg'
+        },
+        {
+            id: 11,
+            nombre: "cerveza ",
+            precio: 450,
+            img:'multimedia/fotos/foto6.jpg'
+        },
+        {
+            id: 12,
+            nombre: "cerveza ",
+            precio: 450,
+            img:'multimedia/fotos/foto6.jpg'
+        }
     ]
 
     function renderizarProductos() {

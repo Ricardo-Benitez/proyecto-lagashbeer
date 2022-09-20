@@ -20,7 +20,20 @@ document.addEventListener('DOMContentLoaded', () => {
             nombre: "cerveza ",
             precio: 300,
             img:'multimedia/fotos/foto2.jpg'
+        },
+        {
+            id: 3,
+            nombre: "cerveza ",
+            precio: 300,
+            img:'multimedia/fotos/foto2.jpg'
+        },
+        {
+            id: 4,
+            nombre: "cerveza ",
+            precio: 300,
+            img:'multimedia/fotos/foto2.jpg'
         }
+        
         
     ]
 function renderizarProductos() {
